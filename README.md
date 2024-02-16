@@ -19,4 +19,4 @@
 - mailbox.admin
 
 ## 플러그인 영상
-- 없음
+- [이동하기](https://youtu.be/vj2AYOnJIvE)
