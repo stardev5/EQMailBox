@@ -1,0 +1,11 @@
+subprojects {
+    group = "day.lone.mail.plugin"
+
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        maven { url = "https://yonerepo.nvh.kr/repository/stardev5/" }
+        maven { url = "https://yonerepo.nvh.kr/repository/spigotmc/" }
+        maven { url = "https://yonerepo.nvh.kr/repository/libraries/" }
+    }
+}

@@ -1,0 +1,32 @@
+plugins {
+    id "java"
+    id "java-library"
+    id "com.github.johnrengelman.shadow" version "8.1.1"
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = "UTF-8"
+}
+
+shadowJar {
+    archiveBaseName.set("EQMailBox")
+    archiveClassifier.set("")
+}
+
+jar {
+    finalizedBy shadowJar
+}
+
+group = "day.lone.mail.plugin"
+version = "1.0.0"
+
+dependencies {
+    compileOnly "org.spigotmc:spigot-api:1.19-R0.1"
+
+    implementation project(":mail-api")
+
+    implementation "co.aikar:acf-bukkit:0.5.1"
+    implementation "day.yone:yone-utils:0.3.4"
+    implementation "day.yone:sign-utils:0.0.1-alpha"
+    implementation "day.yone:packet-utils:0.0.1-alpha"
+}

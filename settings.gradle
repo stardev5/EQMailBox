@@ -1,0 +1,4 @@
+rootProject.name = "EQMailBox"
+
+include ":mail-core"
+include ":mail-api"

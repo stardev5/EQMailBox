@@ -1,0 +1,5 @@
+name: EQMailBox
+main: day.lone.mail.plugin.EQMailBox
+authors: [lone64]
+version: 1.0.0
+api-version: 1.19
